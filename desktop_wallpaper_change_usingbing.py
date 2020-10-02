@@ -18,7 +18,7 @@ img_link="https://www.bing.com"+img
 
 #download image
 urllib.request.urlretrieve(img_link,'desktop.jpg')
-print("Image download successfull!")
+#print("Image download successfull!")
 
 
 
@@ -30,4 +30,4 @@ image = "desktop.jpg"
 image_path = os.path.join(drive, folder, image)
 SPI_SETDESKWALLPAPER = 20 
 ctypes.windll.user32.SystemParametersInfoW(SPI_SETDESKWALLPAPER, 0, image_path , 0)
-print(image_path)
+#print(image_path)
